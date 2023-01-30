@@ -6,7 +6,7 @@ public class FollowCharacter : MonoBehaviour
 {
     [SerializeField] private Transform character;
     [SerializeField] private float speed;
-    [SerializeField] private float minDistance;
+    [SerializeField] public float minDistance;
     
     void Update()
     {

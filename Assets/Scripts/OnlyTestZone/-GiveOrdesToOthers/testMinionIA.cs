@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestFollowChar : MonoBehaviour
+public class testMinionIA : MonoBehaviour
 {
-    [SerializeField] private Transform character;
+    [SerializeField] private Transform character; //selecciona al objeto que se quiere seguir
     [SerializeField] private float speed;
-    [SerializeField] public float minDistance;
+    [SerializeField] public float minDistance; //esto determina cuando dejar de seguir
+    void Start()
+    {
+        
+    }
 
     void Update()
     {
@@ -15,9 +19,6 @@ public class TestFollowChar : MonoBehaviour
     public void FollowChar()
     {
         Vector3 vectorToChar = character.position - transform.position;
-        
-        //El texto comentado implica entender que estamos intentando ver la distancia que existe entre el objeto seleccionado que querramos seguir y el objeto que tenga este Script, desgloza el vector en 3 floats, los suma, y luego los fuerza a ser siempre positivos, así se puede ver siempre la distancia real y no importa si es negativa a positiva segun las coordenadas
-
         /* float distancex=vectorToChar.x; 
          float distancey=vectorToChar.y;
          float distancez=vectorToChar.z;

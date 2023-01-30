@@ -458,7 +458,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798140149}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2126ae486b936424eabfea41bf814c1b, type: 3}
   m_Name: 
@@ -802,6 +802,7 @@ GameObject:
   - component: {fileID: 2118136204}
   - component: {fileID: 2118136203}
   - component: {fileID: 2118136202}
+  - component: {fileID: 2118136206}
   m_Layer: 0
   m_Name: EnemyDual
   m_TagString: Untagged
@@ -887,3 +888,17 @@ Transform:
   m_Father: {fileID: 577490138}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2118136206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118136201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2a0f960c9cbb64e8fbc217fd77f302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  follow: {fileID: 798140154}
+  listaAcciones: 0
