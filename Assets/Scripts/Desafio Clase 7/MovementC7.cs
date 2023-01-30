@@ -5,10 +5,7 @@ using UnityEngine;
 public class MovementC7 : MonoBehaviour
 {
     [SerializeField] private float speed;
-    void Start()
-    {
-        
-    }
+   
     void Update()
     {
         float horizontal = Input.GetAxis("Horizontal");

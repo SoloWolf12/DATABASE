@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class MovimientoXEnum : MonoBehaviour
 {
-    public enum direccionPorEnum 
+   /* public enum direccionPorEnum 
     {
     adelante,
     atras,
@@ -24,10 +24,10 @@ public class MovimientoXEnum : MonoBehaviour
     public Vector3 direccion;
     void Update()
     {
-        testCase();
+        TestCase();
         Move();
     }
-    public void testCase() 
+    public void TestCase() 
     {
         switch (desdeElEditor) 
         {
@@ -109,5 +109,5 @@ public class MovimientoXEnum : MonoBehaviour
         transform.localPosition += direccion * speed * Time.deltaTime;       
     }
 
-   
+   */
 }
