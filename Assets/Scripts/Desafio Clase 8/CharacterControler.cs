@@ -5,15 +5,18 @@ using UnityEngine;
 public class CharacterControler : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private float giroSpeed;
 
     void Update()
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        Vector3 direction = new (horizontal, 0, vertical);
-        
-    
-        transform.localPosition += direction * speed * Time.deltaTime;
-        transform.rotation = Quaternion.AngleAxis(vertical,new Vector3(0,1,0));
+        Vector3 direction = new (0, 0, vertical);
+
+
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * vertical);
+        transform.Rotate(Vector3.up, horizontal * giroSpeed * Time.deltaTime);
+       
+       
     }
 }
