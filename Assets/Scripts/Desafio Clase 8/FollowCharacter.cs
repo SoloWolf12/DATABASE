@@ -5,12 +5,13 @@ using UnityEngine;
 public class FollowCharacter : MonoBehaviour
 {
     [SerializeField] private Transform character;
-    [SerializeField] private float speed;
+    [SerializeField] public float speed;
     [SerializeField] public float minDistance;
     
     void Update()
     {
         FollowChar();
+        
     }
     public void FollowChar() 
     {

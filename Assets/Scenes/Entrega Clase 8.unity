@@ -458,14 +458,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798140149}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2126ae486b936424eabfea41bf814c1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 846257462}
   speed: 1
-  minDistance: 3
+  minDistance: 2
 --- !u!1 &846257457
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,6 +590,7 @@ GameObject:
   - component: {fileID: 1069426470}
   - component: {fileID: 1069426469}
   - component: {fileID: 1069426468}
+  - component: {fileID: 1069426472}
   m_Layer: 0
   m_Name: EnemyLookAt
   m_TagString: Untagged
@@ -675,6 +676,20 @@ Transform:
   m_Father: {fileID: 577490138}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1069426472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069426467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89af90a420c1a7438b86f3fa553a1cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 846257462}
+  speed: 0.8
 --- !u!1 &1257679936
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,5 +915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec2a0f960c9cbb64e8fbc217fd77f302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  listaAcciones: 2
+  character: {fileID: 846257462}
   follow: {fileID: 798140154}
-  listaAcciones: 0
+  Look: {fileID: 1069426472}
