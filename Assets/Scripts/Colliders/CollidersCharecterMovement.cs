@@ -10,15 +10,13 @@ public class CollidersCharecterMovement : MonoBehaviour
 
     void Update()
     {
-        Move();
-     
+        Move();    
     }
 
    
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Estoy en contacto con " + other);
-        
+        Debug.Log("Estoy en contacto con " + other.gameObject.name);        
     }
 
 
