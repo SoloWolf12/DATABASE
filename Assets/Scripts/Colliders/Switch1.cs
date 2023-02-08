@@ -9,7 +9,7 @@ public class Switch1 : MonoBehaviour
     private Vector3 speed = new Vector3(0, 0, -0.9f);
 
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         Debug.Log(collision.gameObject.name);
         if (collision.gameObject.CompareTag("Player"))
