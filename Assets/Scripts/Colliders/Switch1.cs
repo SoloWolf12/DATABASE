@@ -13,8 +13,7 @@ public class Switch1 : MonoBehaviour
     {
         Debug.Log(collision.gameObject.name);
         if (collision.gameObject.CompareTag("Player"))
-        {
-            
+        {            
             timer += Time.deltaTime;
             if (timer >= 2)
             {

@@ -15,7 +15,7 @@ public class Switch2 : MonoBehaviour
     {
         Vector3 distancia = transform.position - originalPos;
         float magnitudDistancia= distancia.magnitude;
-        Debug.Log(magnitudDistancia);
+        //Debug.Log(magnitudDistancia);
 
         if (magnitudDistancia <= 0.01) 
         {
