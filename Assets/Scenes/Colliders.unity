@@ -2225,6 +2225,7 @@ MonoBehaviour:
   llamandoScriptCollider3: {fileID: 540776764}
   llamandoScriptCollider4: {fileID: 1162923254}
   luzBigWall: {fileID: 338417070}
+  material: {fileID: 2100000, guid: 2af7d5fa0f5f571419df63d56304aace, type: 2}
 --- !u!65 &1754001042
 BoxCollider:
   m_ObjectHideFlags: 0
