@@ -831,6 +831,7 @@ GameObject:
   - component: {fileID: 612735764}
   - component: {fileID: 612735763}
   - component: {fileID: 612735762}
+  - component: {fileID: 612735766}
   m_Layer: 0
   m_Name: Switch 3
   m_TagString: Untagged
@@ -846,7 +847,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 612735761}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -914,8 +915,20 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1368690797}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &612735766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612735761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffb75ef72b7ab9e409854ecf3cf44d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &652794327
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,7 +1076,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28580
+  m_Name: pb_Mesh30166
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1795,8 +1808,8 @@ Transform:
   - {fileID: 2092390643}
   - {fileID: 893747218}
   - {fileID: 367246267}
-  - {fileID: 612735765}
   - {fileID: 1561498944}
+  - {fileID: 612735765}
   - {fileID: 2074818392}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1836,6 +1849,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3.5
   giroSpeed: 130
+  timeToSpeed: 0
+  materialColor: {fileID: 2100000, guid: ec240a122ebe60142ab54eb80cca848f, type: 2}
+  rendererColor: {fileID: 0}
 --- !u!135 &1459986784
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2174,7 +2190,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1368690797}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1561498945
 MonoBehaviour:

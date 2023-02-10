@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Switch3 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+  
+    private void OnTriggerEnter(Collider other)
     {
-        
+        var character = other.GetComponent<CollidersCharecterMovement>();
+        var renderer = character.GetComponent<Renderer>();
+        renderer.material.color = Color.blue;
+
+        character.SonicState(1);
+
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
+
 }
