@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class TDAEXAMPLE : MonoBehaviour
 {
-    /*[SerializeField] private string[] exampleArray;
-    [SerializeField] private List<string> exampleList;*/
+    [SerializeField] private string[] exampleArray;
+    [SerializeField] private List<string> exampleList;
 
     [SerializeField] private Transform[] waypoints;
     [SerializeField] private int _actualWaypoint;
@@ -22,8 +22,8 @@ public class TDAEXAMPLE : MonoBehaviour
     }
     void Start()
     {
-       /* Debug.Log(exampleArray[0] + exampleArray[1] + exampleArray[2] + exampleArray[3]);
-        Debug.Log(exampleList[0] + exampleList[1] + exampleList[2] + exampleList[3]);*/
+        Debug.Log(exampleArray[0] + exampleArray[1] + exampleArray[2] + exampleArray[3]);
+        Debug.Log(exampleList[0] + exampleList[1] + exampleList[2] + exampleList[3]);
         
         var newExampleArray = new string[4];  //este array SIEMPRE requiere que digamos el largo que va a tener, en el caso de la linea 8 no es necesario porque el array aun no esta hecho y en el momento de compilar va a crear el array con el largo especifico que pusimos en el inspector
         var newExampleList = new List<string>(); //puedo hacer que en vez de var, sea list
