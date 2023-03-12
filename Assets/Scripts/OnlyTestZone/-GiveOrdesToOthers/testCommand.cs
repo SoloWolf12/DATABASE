@@ -37,6 +37,7 @@ public class testCommand : MonoBehaviour
             }
             else if (listaAcciones == testactions.look)
             {
+                follow.LookForCharacter();
                 Debug.Log("estoy mandando a mirar");
             }
             else
@@ -53,6 +54,7 @@ public class testCommand : MonoBehaviour
             }
             else if (listaAcciones == testactions.look)
             {
+                follow2.LookForCharacter();
                 Debug.Log("estoy mandando a mirar");
             }
             else
@@ -70,7 +72,9 @@ public class testCommand : MonoBehaviour
                 }
             else if (listaAcciones == testactions.look)
                 {
-                    Debug.Log("estoy mandando a mirar");
+                    follow.LookForCharacter();
+                    follow2.LookForCharacter();
+                Debug.Log("estoy mandando a mirar");
                 }
             else
                 {

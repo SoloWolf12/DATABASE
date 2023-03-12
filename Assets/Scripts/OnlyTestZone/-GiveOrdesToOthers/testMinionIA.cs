@@ -7,6 +7,8 @@ public class testMinionIA : MonoBehaviour
     [SerializeField] private Transform character; //selecciona al objeto que se quiere seguir
     [SerializeField] private float speed;
     [SerializeField] public float minDistance; //esto determina cuando dejar de seguir
+    
+    [SerializeField] public float lookSpeed;
     void Start()
     {
         
@@ -14,7 +16,7 @@ public class testMinionIA : MonoBehaviour
 
     void Update()
     {
-        FollowChar();
+       
     }
     public void FollowChar()
     {
@@ -32,4 +34,12 @@ public class testMinionIA : MonoBehaviour
             transform.position += vectorToChar.normalized * (speed * Time.deltaTime);
         }
     }
+
+    public void LookForCharacter()
+    {
+        Vector3 whereToLook = character.position - transform.position;
+        Quaternion newRotation = Quaternion.LookRotation(whereToLook);
+        transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, (lookSpeed * Time.deltaTime));
+    }
+
 }
