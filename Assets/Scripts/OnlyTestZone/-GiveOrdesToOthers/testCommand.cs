@@ -5,6 +5,7 @@ public enum testactions
 {
     follow,
     look,
+    both,
     nothing
 }
 public enum testSelectMinons 
@@ -40,6 +41,12 @@ public class testCommand : MonoBehaviour
                 follow.LookForCharacter();
                 Debug.Log("estoy mandando a mirar");
             }
+            else if (listaAcciones == testactions.both)
+            {
+                follow.FollowChar();
+                follow.LookForCharacter();
+                Debug.Log("estoy mandando a mirar");
+            }
             else
             {
                 Debug.Log("no hacer nada");
@@ -57,6 +64,12 @@ public class testCommand : MonoBehaviour
                 follow2.LookForCharacter();
                 Debug.Log("estoy mandando a mirar");
             }
+            else if (listaAcciones == testactions.both)
+            {
+                follow2.FollowChar();
+                follow2.LookForCharacter();
+                Debug.Log("estoy mandando a mirar");
+            }
             else
             {
                 Debug.Log("no hacer nada");
@@ -68,17 +81,25 @@ public class testCommand : MonoBehaviour
                 {
                     follow.FollowChar();
                     follow2.FollowChar();
-                    Debug.Log("estoy comandando a mi minon a seguir");
+                    
                 }
             else if (listaAcciones == testactions.look)
                 {
                     follow.LookForCharacter();
                     follow2.LookForCharacter();
-                Debug.Log("estoy mandando a mirar");
+                    
                 }
+            else if (listaAcciones == testactions.both)
+            {
+                follow.FollowChar();
+                follow.LookForCharacter();
+                follow2.FollowChar();
+                follow2.LookForCharacter();
+                Debug.Log("estoy mandando a mirar");
+            }
             else
                 {
-                    Debug.Log("no hacer nada");
+                    Debug.Log("ninguno de los dos hace nada");
                 }
             }       
         }
