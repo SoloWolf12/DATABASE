@@ -20,6 +20,16 @@ public class AllTogether : MonoBehaviour
         MovementWithTranslate();
     }
 
+    private void Awake()
+    {
+        OnMovementTogether += UpdateMovement;
+    }
+
+    private void UpdateMovement(Vector2 value) 
+    {
+     inputMovement= value;
+    }
+
     private void MovementWithTranslate()
     {
         transform.Translate(inputMovement * speed * Time.deltaTime);
